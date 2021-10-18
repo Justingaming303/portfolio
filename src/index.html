@@ -6,59 +6,67 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome | Justin William Tjahyono</title>
-        <link rel="stylesheet" href="style.css">
-
-
+<link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        <script>
+            //Only run animations at desktop
+            if (window.innerWidth > 1080) {
+                var head = document.getElementsByTagName('head')[0];
+                var animations = document.createElement("script");
+                animations.type = "text/javascript";
+                animations.src = "./scripts/animations.js";
+                var desktopStyles = document.createElement("link");
+                desktopStyles.rel = "stylesheet";
+                desktopStyles.href = "./styles/desktop.css";
+                head.appendChild(animations);
+                head.appendChild(desktopStyles);
+            } else if (window.innerWidth < 1080) {
+                var head = document.getElementsByTagName('head')[0];
+                var noanimations = document.createElement("script");
+                noanimations.type = "text/javascript";
+                noanimations.src = "./scripts/noanimation.js";
+                var nodesktopStyles = document.createElement("link");
+                nodesktopStyles.rel = "stylesheet";
+                nodesktopStyles.href = "./styles/nodesktop.css";
+                head.appendChild(noanimations);
+                head.appendChild(nodesktopStyles);
+            }
+        </script>
     </head>
-
     <body>
-        <!-- 
-
-        TODO Header
-        TODO ABOUT 
-        TODO DESCRIPTION
-        ! Header WIP 
-        
-
-    -->
-
         <nav id="navcolor">
             <ul>
                 <li class="navbtn" id="homebutton" class="active"><a>Home</a></li>
                 <li class="dropdown">
                     <a class="navbtn" class="btndown" id="services">Services</a>
-
-                   
                 </li>
-
                 <li id="contact" class="navbtn" class="right"><a
                         href="mailto: justinwilliamtjahyono@gmail.com">Contact</a></li>
-
-
-
                 </li>
-
-
             </ul>
         </nav>
-      
         <div id="main">
+            <img src="" alt="">
             <h1 class="text" id="text1">full.</h1>
             <h1 class="text" id="text2">stack.</h1>
             <h1 class="text" id="text3">developer.</h1>
             <h1 class="text" id="text-html">HTML.</h1>
             <h1 class="text" id="text-js">JS.</h1>
             <h1 class="text" id="text-css">CSS.</h1>
-      
+            <div id="text-aboutme-container">
+                <h1 class="heading "id="title-aboutme">about me</h1>
+                <p id="text-aboutme">I am a frontend developer but with a small drip of backend developing.
+                    I live in Indonesia, specifically in Semarang. I code for a living and would love to expand my
+                    knowledge.</p>
+            </div>
         </div>
-  
-
-        <div class="library-container" id="library-container-discordjs">
+        <div></div>
+        <!-- <div class="library-container" id="library-container-discordjs">
             <div class="library-logo" id="logo-container-discordjs">
                 <img src="discord js.png" alt="logo discord.js" id="logo-discordjs">
             </div>
             <div class="library-desc" id="desc-container discordjs">
-                 <a href="https://discord.js.org/#/" target="_blank" id="a-djs"> Discord JS</a> <br><br>
+                <a href="https://discord.js.org/#/" target="_blank" id="a-djs"> Discord JS</a> <br><br>
                 <p>Discord bots coded in javascript</p>
             </div>
 
@@ -73,9 +81,9 @@
                 <p>Animation</p>
             </div>
 
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-        <script src="script.js"></script>
+        </div> -->
+
+        </script>
 
     </body>
 

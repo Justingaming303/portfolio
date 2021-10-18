@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+}
+
+.header-button {
+  border: none;
+  height: 3rem;
+  width: 7rem;
+  background-color: rgb(78, 78, 78);
+}
+nav {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+ul li {
+  float: left;
+  width: 100px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgba(0, 166, 255, 1);
+  display: block;
+  padding: 16px 18px;
+}
+
+ul li:not(.active) a:hover,
+ul li.dropdown:hover .btndown {
+  color: rgb(0, 155, 238);
+  font-weight: 500;
+}
+
+ul li.dropdown {
+  display: inline-block;
+}
+
+ul li.dropdown:hover {
+  cursor: pointer;
+}
+
+ul li.right {
+  float: right;
+  color: rgba(0, 62, 255, 1);
+}
+
+ul li.activeRight {
+  float: right;
+  background-color: #003eff;
+}
+
+#main {
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* display: flex;
+  align-content: space-between;
+  align-items: center;
+  justify-content: flex-start; */
+  z-index: -1;
+}
+
+#main #text1 {
+  position: absolute;
+  top: 42.43353783231084vh;
+  left: 44.833333333333332vw;
+}
+#main #text2 {
+  position: absolute;
+  top: 39.877300613496935vh;
+  left: 48.041666666666668vw;
+}
+#main #text3 {
+  position: absolute;
+  top: 37.83231083844581vh;
+  left: 52.5vw;
+}
+
+#main #text-html {
+  position: absolute;
+  top: 46.012269938650306vh;
+  left: 48.041666666666668vw;
+}
+
+#main #text-js {
+  position: absolute;
+  top: 48.56850715746421vh;
+  left: 53.458333333333336vw;
+}
+#main #text-css {
+  position: absolute;
+  top: 51.56850715746521vh;
+  left: 55.7vw;
+}
+
+#homebutton {
+  border-bottom: 2px solid rgba(0, 166, 255, 1);
+}
+
+.text {
+  text-shadow: 1px 1px 5px rgb(117, 117, 117);
+  margin-top: 10vh;
+  
+}
+
+#text-aboutme {
+  text-shadow: none;
+  font-family: "Comfortaa", cursive;
+  font-size: 10px;
+}
+
+#text-aboutme-container {
+  width: 80vw;
+  height: 10vh;
+  margin-top: 30vh;
+  z-index: 1;
+ 
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 1vh;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+}

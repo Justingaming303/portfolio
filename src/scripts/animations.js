@@ -6,8 +6,7 @@ const tl = gsap.timeline()
 tl.from('#navcolor', { duration: 1, x: '-100%', ease: 'power2' })
     .from('.navbtn', { duration: 1, y: '-100%', ease: 'power', stagger: '0.2', delay: '0.2' })
     gsap.from('.text', { duration: 1, x: '-100%', scale: '0', ease: 'power' })
-    gsap.from('#blob', { duration: 1, y: '-100%', scale: '0', rotation: '720', ease: 'power' })
-    gsap.from('#waves', { duration: 1, y: '100%', ease: 'bounce' })
+
 
 
 const f = document.querySelector('#text1')
@@ -64,11 +63,4 @@ c.addEventListener('mouseover', function cr() {
 c.addEventListener('mouseout', function cr() {
     gsap.to(c, { duration: 1, y: 'default', ease: 'bounce' })
 })
-
-discordjs.addEventListener('click', function djs() {
-
-gsap.to(discordjs, { duration: 1, x: '150%', ease: 'power2', })
-gsap.to(gsap3, { duration: 1, x: '-150%', ease: 'power2'})
-
-})           
 

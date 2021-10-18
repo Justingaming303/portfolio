@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,15 +10,6 @@
   text-decoration: none;
 }
 
-body {
-  background: rgb(0, 166, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 166, 255, 1) 41%,
-    rgba(0, 62, 255, 1) 74%
-  );
-
-}
 .header-button {
   border: none;
   height: 3rem;
@@ -26,7 +17,6 @@ body {
   background-color: rgb(78, 78, 78);
 }
 nav {
-  margin-top: 5vh;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -67,10 +57,7 @@ ul li.dropdown {
   display: inline-block;
 }
 
-
-
-
-ul li.dropdown:hover{
+ul li.dropdown:hover {
   cursor: pointer;
 }
 
@@ -87,8 +74,9 @@ ul li.activeRight {
 #main {
   background-color: white;
   width: 100%;
-  height: 300vh;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   /* display: flex;
   align-content: space-between;
   align-items: center;
@@ -99,99 +87,61 @@ ul li.activeRight {
 #main #text1 {
   position: absolute;
   top: 42.43353783231084vh;
-  left: 46.833333333333332vw;
+  left: 41.833333333333332vw;
 }
 #main #text2 {
   position: absolute;
   top: 39.877300613496935vh;
-  left: 50.041666666666668vw;
+  left: 45.041666666666668vw;
 }
 #main #text3 {
   position: absolute;
   top: 37.83231083844581vh;
-  left: 54.5vw;
+  left: 49.5vw;
 }
 
 #main #text-html {
   position: absolute;
   top: 46.012269938650306vh;
-  left: 50.041666666666668vw;
+  left: 45.041666666666668vw;
 }
 
 #main #text-js {
   position: absolute;
   top: 48.56850715746421vh;
-  left: 55.458333333333336vw;
+  left: 50.458333333333336vw;
 }
 #main #text-css {
   position: absolute;
   top: 51.56850715746521vh;
-  left: 57.7vw;
+  left: 52.7vw;
 }
 
 #homebutton {
   border-bottom: 2px solid rgba(0, 166, 255, 1);
 }
 
-
-
-.library-container {
-  border-radius: 15%;
-  border: 1px solid;
-  height: 40vh;
-  width: 15vw;
-  background-color: #fcfcfc;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 7px 4px 20px rgb(117, 117, 117);
-}
-
-#logo-discordjs {
-  height: 20.449897750511248vh;
-  width: 20.833333333333332vw;
-}
-#logo-container-discordjs {
-  height: fit-content;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #090a16;
-  font-size: 16px;
-}
-
-#library-container-discordjs {
-  left: 59.895833333333336vw;
-  margin-top: 100vh;
-}
-/* .library-desc {
-  text-align: center;
-  bottom: 70px;
-  position: absolute;
-} */
-
-#library-container-gsap3 {
-  left: 103.85416666666667vw;
-  margin-top: 100vh;
-
-}
-#logo-container-gsap3 {
-  background-color: #262626;
-  height: fit-content;
-  display: flex;
-  justify-content: space-evenly;
-}
-#logo-gsap3 {
-  height: 20.449897750511248vh;
-  width: 20.833333333333332vw;
-}
-#a-djs {
-  font-size: 24px;
-}
-
-#a-gsap3 {
-  font-size: 24px;
+.text {
+  text-shadow: 1px 1px 5px rgb(117, 117, 117);
+  margin-top: 20vh;
   
 }
 
-.text {
-  text-shadow: 1px 1px 5px rgb(117, 117, 117);
+#text-aboutme {
+  text-shadow: none;
+  font-family: "Comfortaa", cursive;
+}
+
+#text-aboutme-container {
+  width: 40vw;
+  height: 10vh;
+  margin-top: 30vh;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 1vh;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.5);
 }
