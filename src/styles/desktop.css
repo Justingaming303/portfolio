@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: rgba(51, 51, 51);
+}
+
+.header-button {
+  border: none;
+  height: 3rem;
+  width: 7rem;
+  background-color: rgb(78, 78, 78);
+}
+
+#main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* display: flex;
+  align-content: space-between;
+  align-items: center;
+  justify-content: flex-start; */
+  z-index: -1;
+}
+
+#main #text1 {
+  position: absolute;
+  top: 122.43353783231084vh;
+  left: 41.833333333333332vw;
+}
+#main #text2 {
+  position: absolute;
+  top: 119.877300613496935vh;
+  left: 45.041666666666668vw;
+}
+#main #text3 {
+  position: absolute;
+  top: 117.83231083844581vh;
+  left: 49.5vw;
+}
+
+#main #text-html {
+  position: absolute;
+  top: 126.012269938650306vh;
+  left: 45.041666666666668vw;
+}
+
+#main #text-js {
+  position: absolute;
+  top: 128.56850715746421vh;
+  left: 50.458333333333336vw;
+}
+#main #text-css {
+  position: absolute;
+  top: 131.56850715746521vh;
+  left: 52.7vw;
+}
+
+.text {
+  text-shadow: 1px 1px 4px rgb(117, 117, 117);
+  margin-top: 20vh;
+}
+
+#text-aboutme {
+  text-shadow: none;
+  font-family: "Comfortaa", cursive;
+}
+
+#text-aboutme-container {
+  width: 40vw;
+  height: 10vh;
+  margin-top: 100vh;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 1vh;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);
+}
+
+.skills-container {
+  margin-top: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.skills-badges {
+  margin-top: 10vh;
+}
+
+#skill-text {
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);
+}
+
+.badges {
+  width: 5vh;
+}
+
+.work-container {
+  width: 50vw;
+  /* display: flex; */
+  position: absolute;
+  left: 25vw;
+  margin-top: 15vh;
+}
+#project-desc {
+  margin-top: 3vh;
+  text-align: center;
+}
+#work-heading {
+  font-size: 60px;
+  text-align: center;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.5);
+}
+.project {
+  font-size: 35px;
+}
+#discord-moderation-bot-features-list {
+  font-size: 15px;
+
+  margin-left: 4%;
+}
+
+#discord-moderation-bot-content {
+  display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 81vw;
+    position: absolute;
+    left: -16vw;
+    margin-top: 5vh;
+}
+
+
+#aboutme-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 5vh;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.work {
+  background-color: rgb(187, 187, 187);
+  border: 2px solid black;
+  padding: 30px 60px 30px 60px;
+  border-radius: 4px;
+  animation-name: animationout;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  color: black;
+  width: 10vw;
+}
+.work:hover {
+  animation-name: animation;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  background-color: rgb(231, 226, 226);
+}
+
+@keyframes animation {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@-moz-keyframes animation {
+  from {
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes animationout {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@-moz-keyframes animationout {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
+.footer {
+  position: absolute;
+  top: 280%;
+  width: 100%;
+
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+.copyright {
+  height: 10vh;
+  align-items: center;
+}
+
+.animation {
+  margin-top: 5vh;
+}
+
+#handshake {
+  font-size: 100px;
+}
+
+#i-amtext {
+  font-size: 60px;
+}
+
+#name {
+  font-size: 150px;
+}
+
+#blob {
+  z-index: -5;
+  position: absolute;
+  height: 100vh;
+  left: -10vw;
+  top: -30vh;
+  width: 50vw;
+}
+
+#intro {
+  position: relative;
+}
+
+.arrowdown {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
+  left: 50%;
+  top: 90%;
+  animation-name: arrowanimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1,-0.98,.76,.81);
+}
+
+@keyframes arrowanimation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
