@@ -7,9 +7,8 @@
 - Discord: bangjo#9578
 - Instagram: [@tjahyonojustin](https://www.instagram.com/tjahyonojustin/)
 
-# Features
-- Frontend Interactions (Animations)
-- More to come..
+
+### Works best in PC!
 
 # Bugs
 
